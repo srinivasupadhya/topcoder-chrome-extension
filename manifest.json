@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "TopCoder",
+    "description": "Remember problems solved from Problem Archive",
+    "version": "0.1",
+    "icons": {
+      "128": "topcoder-128.png"
+    },
+    "background": {
+        "scripts": ["event.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_icon": "topcoder-20.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://community.topcoder.com/*"],
+            "js": [
+                "markup.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": ["green_tick.png"],
+    "permissions": [
+        "tabs", 
+        "http://*/*", 
+        "https://*/*",
+        "storage"
+    ]
+}
