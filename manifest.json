@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "TopCoder",
     "description": "Remember problems solved from Problem Archive",
-    "version": "0.1",
+    "version": "0.2",
     "icons": {
       "128": "topcoder-128.png"
     },
@@ -22,7 +22,7 @@
             ]
         }
     ],
-    "web_accessible_resources": ["green_tick.png"],
+    "web_accessible_resources": ["green_tick.png", "question_mark.png"],
     "permissions": [
         "tabs", 
         "http://*/*", 
