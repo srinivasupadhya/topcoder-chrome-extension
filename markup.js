@@ -37,6 +37,6 @@ if (document.getElementsByClassName('paddingTable2').length > 0) {
     var table = document.getElementsByClassName("paddingTable2")[2];
     for (i = 3; i < table.rows.length - 6; i++) {
         var problem = table.rows[i].cells[1].textContent.trim();
-        markIfSolved(problem, table.rows[i].cells[0], table.rows[i].cells[2], table.rows[i].cells[6], table.rows[i].cells[9]);
+        markIfSolved(problem, table.rows[i].cells[0], table.rows[i].cells[2], table.rows[i].cells[7], table.rows[i].cells[9]);
     }
 }
